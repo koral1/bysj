@@ -8,6 +8,6 @@ def first_flask():    #视图函数
     return 'Hello Worldcaicai'  #response
  
 if __name__ == '__main__':
-    server = make_server('', 5000, app)
+    server = make_server('0.0.0.0', 5000, app)
     server.serve_forever()#启动socket
 
